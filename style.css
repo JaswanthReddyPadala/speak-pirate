@@ -130,13 +130,48 @@ main{
 }
 footer{
     width:100vw;
-    height:5vh;
+    padding:1rem;
     background-color: #121212;
     color:beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.contact_details{
+    width:100%;
+    margin-bottom: 1.5rem;
+}
+.contact_details h1{
+    font-size: 1.5rem;
+    margin:0.5rem;
+}
+.contact_details p{
+    font-size:0.7rem;
+}
+.social{
+    display: block;
+    color:white
+}
+.contact_item{
+    color:white;
+    margin:1rem;
+    font-size: 0.6rem;
+    transition: all 0.3s ease-in-out;
+}
+.contact_item:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
 @media screen and (min-width:550px){
     html{
         font-size: 18px;
+    }
+    footer{
+        flex-direction: row;
+        padding:2rem;
+    }
+    .contact_details{
+        width:70%;
+        margin-bottom: 2rem;
     }
 }
