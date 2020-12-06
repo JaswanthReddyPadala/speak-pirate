@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Major Mono Display', monospace;
+}
+
+html{
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+header{
+    width:100vw;
+    text-align: center;
+    padding:2.5% 3%;
+    background-color: #121212;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color:white;
+}
+header p{
+    color:beige;
+    font-size: 1rem;
+}
+
+hr{
+color:red;
+width:20%;
+margin:1rem;
+}
+
+main{
+    width:100vw;
+    padding:2.5% 10%;
+    background-color: ;
+}
+
+.inputWrap, .outputWrap{
+    width:90vw;
+    height:35%;
+    margin-bottom: 2rem;
+}
+
+.inputWrap, #translateBtn{
+    margin-bottom: 2rem;
+}
+.inputWrap h1, .outputWrap h1{
+    font-size: 1rem;
+    background-color: #121212;
+    color:white;
+    margin-bottom: 1rem;
+    width: max-content;
+    padding:1rem;
+}
+#textInput, .output{
+    width: 100%;
+    border:1px solid #121212;
+    background-color: rgba(255, 255, 255, 0.6);
+    min-height:20vh;
+    font-size:1.1rem;
+    display: block;
+    padding:2%;
+    /* overflow: scroll; */
+    justify-content: flex-end;
+    box-shadow: 0 0px 50px rgb(196, 196, 196);
+}
+
+#translateBtn{
+    width:7rem;
+    height:8rem;
+    padding:20px;
+    background-color: #EFEFEF;
+    border:1px solid #121212;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#translateBtn img{
+    width:80px;
+    height:80px;
+}
+
+#clearBtn{
+    font-size: 1.1rem;
+    width:max-content;
+    padding:10px;
+    color:white;
+    background-color: #121212;
+}
+
+.about_group{
+    width:100vw;
+    padding:5vh 10vw;
+}
+.about_group img{
+    width:100%;
+    margin:2rem 0;
+
+}
+.about_group h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.about_group p{
+    color:beige;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.pirate{
+    background-color: #121212;
+    color: white;
+    display: none;
+    font-family: 'Major Mono Display', monospace;
+}
+.pirate h1{
+    border-bottom: 3px solid grey;
+}
+footer{
+    width:100vw;
+    height:5vh;
+    background-color: #121212;
+    color:beige;
+}
+
+@media screen and (min-width:550px){
+    html{
+        font-size: 18px;
+    }
+}
